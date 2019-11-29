@@ -1,0 +1,47 @@
+{
+  "EventType": "DETWriteContext",
+  "Environment": {
+    "UserName": "09999888",
+    "MachineName": "MEL92200623",
+    "DomainName": "EDU001",
+    "CallingMethodName": "DET.Write.Data.DETWriteContext.SaveChanges()",
+    "AssemblyName": "DET.Write.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "Culture": "en-AU"
+  },
+  "StartDate": "2019-09-20T02:41:09.3439683",
+  "EndDate": "2019-09-20T02:41:09.4448283",
+  "Duration": 101,
+  "EntityFrameworkEvent": {
+    "Database": "DET_DB",
+    "Entries": [
+      {
+        "Table": "Roles",
+        "Action": "Update",
+        "PrimaryKey": {
+          "Id": 1
+        },
+        "Changes": [
+          {
+            "ColumnName": "Name",
+            "OriginalValue": "Admin",
+            "NewValue": "Admin"
+          },
+          {
+            "ColumnName": "UpdatedDate",
+            "OriginalValue": "0001-01-01T00:00:00",
+            "NewValue": "2019-09-20T12:41:09.1241055+10:00"
+          }
+        ],
+        "ColumnValues": {
+          "Id": 1,
+          "CreatedDate": "0001-01-01T00:00:00",
+          "Name": "Admin",
+          "UpdatedDate": "2019-09-20T12:41:09.1241055+10:00"
+        },
+        "Valid": true
+      }
+    ],
+    "Result": 1,
+    "Success": true
+  }
+}
