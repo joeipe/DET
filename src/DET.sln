@@ -17,15 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DET_Read", "DET_Read", "{72
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DET_Write", "DET_Write", "{E4D19DA3-DF98-40C4-9169-5094FFF53DEE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Read.Domain", "DET.Read.Domain\DET.Read.Domain.csproj", "{137C5EBD-D8A5-4A2D-A6FB-6A2028448098}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DET.Read.Domain", "DET.Read.Domain\DET.Read.Domain.csproj", "{137C5EBD-D8A5-4A2D-A6FB-6A2028448098}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Read.Data", "DET.Read.Data\DET.Read.Data.csproj", "{EB887AB3-D7EC-461C-9E5C-48D01D0C58E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DET.Read.Data", "DET.Read.Data\DET.Read.Data.csproj", "{EB887AB3-D7EC-461C-9E5C-48D01D0C58E0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Write.Data", "DET.Write.Data\DET.Write.Data.csproj", "{2D5A2AF7-11D0-4F4B-A791-6D51DC79C61E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DET.Write.Data", "DET.Write.Data\DET.Write.Data.csproj", "{2D5A2AF7-11D0-4F4B-A791-6D51DC79C61E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DET.Write.Domain", "DET.Write.Domain\DET.Write.Domain.csproj", "{F545A233-179C-4F78-9E34-B1D4E017D634}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DET.IDP", "DET.IDP\DET.IDP.csproj", "{73073853-7BF3-4952-81B0-3A9338B22CCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DET.Write.Domain", "DET.Write.Domain\DET.Write.Domain.csproj", "{F545A233-179C-4F78-9E34-B1D4E017D634}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +63,6 @@ Global
 		{F545A233-179C-4F78-9E34-B1D4E017D634}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F545A233-179C-4F78-9E34-B1D4E017D634}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F545A233-179C-4F78-9E34-B1D4E017D634}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73073853-7BF3-4952-81B0-3A9338B22CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73073853-7BF3-4952-81B0-3A9338B22CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73073853-7BF3-4952-81B0-3A9338B22CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73073853-7BF3-4952-81B0-3A9338B22CCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

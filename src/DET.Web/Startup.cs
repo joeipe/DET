@@ -72,25 +72,6 @@ namespace DET.Web
 
             services.AddAutoMapperSetup();
 
-            services.AddAuthentication(options => 
-            {
-                options.DefaultScheme = "Cookies";
-                options.DefaultChallengeScheme = "oidc";
-            }).AddCookie("Cookies")
-            .AddOpenIdConnect("oidc", options => 
-            {
-                options.SignInScheme = "Cookies";
-                options.Authority = "https://localhost:44372";
-                options.ClientId = "DETWeb_ClientId";
-                options.ResponseType = "code id_token";
-                //options.CallbackPath = new PathString("...")
-                //options.SignedOutCallbackPath = new PathString("...")
-                options.Scope.Add("openid");
-                options.Scope.Add("profile");
-                options.SaveTokens = true;
-                options.ClientSecret = "secretfordet";
-            });
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "DET API", Version = "v1" });
@@ -108,8 +89,6 @@ namespace DET.Web
             {
                 app.UseHsts();
             }
-
-            app.UseAuthentication();
 
             app.ConfigureCustomExceptionMiddleware();
 

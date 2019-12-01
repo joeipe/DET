@@ -1,21 +1,15 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
 using DET.Read.Data.Services;
 using DET.Web.ViewModels;
 using DET.Write.Data.Services;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using SharedKernel.Interfaces;
 
 namespace DET.Web.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Authorize]
     public class DetController : ApiController
     {
         private DETReadData _detReadData;
@@ -144,27 +138,9 @@ namespace DET.Web.Controllers
         [HttpGet]
         public ActionResult GetAllUserRoleModel()
         {
-            //Task.Run(() => WriteOutIdentityInformationAsync());
-
             return Response(_detReadData.GetAllUserRoleModel());
         }
 
         #endregion UserRoles
-
-        private async Task WriteOutIdentityInformationAsync()
-        {
-            // get the saved identity token
-            var identityToken = await HttpContext
-                .GetTokenAsync(OpenIdConnectParameterNames.IdToken);
-
-            // write it out
-            Debug.WriteLine($"Identity token: {identityToken}");
-
-            // write out the user claims
-            foreach (var claim in User.Claims)
-            {
-                Debug.WriteLine($"Claim type: {claim.Type} = Claim value: {claim.Value}");
-            }
-        }
     }
 }
